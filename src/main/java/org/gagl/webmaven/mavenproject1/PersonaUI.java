@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
  * @author gagillar
  */
 @Component
-public class PersonaUI implements Serializable{
+public class PersonaUI extends AbstractUI implements Serializable{
 	    
 	//static final Log LOGGER = LogFactory.getLog(PersonaUI.class);
 	static final Logger LOGGER = Logger.getLogger(PersonaUI.class);
@@ -59,6 +59,7 @@ public class PersonaUI implements Serializable{
 			this.generalServiceImpl.actualizaPersona(entidad);
 			LOGGER.info("Actualiza la persona");
 			this.obtenerPersonas();
+			this.info(null, "hola", "hola mundo");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
