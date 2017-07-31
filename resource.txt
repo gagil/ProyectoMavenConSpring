@@ -1,0 +1,15 @@
+
+ <!-- Copiar el resource en context.xml para poder acceder a traves de el proyecto web   -->
+
+<Resource 
+  name="jdbc/webApp"
+  auth="Container"
+  type="javax.sql.DataSource"
+  driverClassName="com.mysql.jdbc.Driver"
+  url="jdbc:mysql://localhost:3306/test"
+  username="root"
+  password="root"
+  maxActive="8"
+  maxIdle="3"
+  maxWait="10000"
+/>	
